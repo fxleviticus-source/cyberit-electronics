@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order / Enquiry | Cyber-IT Electronics</title>
+<meta name="description" content="Place an order or enquiry with Cyber-IT Electronics. Your request is sent via WhatsApp for confirmation of price and availability.">
+<link rel="icon" href="assets/logo/cyberit-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Order</p>
+      <h1>Order / Enquiry</h1>
+      <p>Tell us what you're after — we'll confirm availability and current pricing over WhatsApp.</p>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="container" style="max-width:760px;">
+      <form class="form-card" id="orderForm">
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" required placeholder="e.g. 0977 000 000">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="productSelect">Product</label>
+          <select id="productSelect"></select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customerLocation">Location</label>
+            <input type="text" id="customerLocation" placeholder="e.g. Woodlands, Lusaka">
+          </div>
+          <div class="form-group">
+            <label>Pickup or Delivery</label>
+            <div class="radio-row" style="margin-top:10px;">
+              <label class="radio-option"><input type="radio" name="fulfilment" value="Pickup" checked> Pickup</label>
+              <label class="radio-option"><input type="radio" name="fulfilment" value="Delivery"> Delivery</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="additionalMessage">Additional Message</label>
+          <textarea id="additionalMessage" placeholder="Any specifics, colour preference, budget, or questions..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn--whatsapp btn--block">Continue to WhatsApp</button>
+
+        <p class="form-note">Your order request will be sent to Cyber-IT Electronics via WhatsApp. Product availability and pricing will be confirmed by the store.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+<script src="js/order.js"></script>
+</body>
+</html>

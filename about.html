@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Cyber-IT Electronics</title>
+<meta name="description" content="Cyber-IT Electronics provides electronics and technology products for customers in Lusaka, Zambia — with convenient WhatsApp ordering and support.">
+<link rel="icon" href="assets/logo/cyberit-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+<div id="site-navbar"></div>
+
+<main>
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / About</p>
+      <h1>About Cyber-IT Electronics</h1>
+      <p>Electronics and technology for everyday life in Lusaka.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container two-col">
+      <div class="reveal">
+        <span class="section-kicker">Who we are</span>
+        <h2>Technology, made convenient.</h2>
+        <p>Cyber-IT Electronics provides electronics and technology products for customers in Lusaka — from smartphones and laptops to audio, accessories and everyday smart devices. Our focus is helping customers find a device that actually fits how they work, study, communicate and stay entertained.</p>
+        <p>Ordering is kept simple: browse the catalogue, ask a question, and place your order directly over WhatsApp. No complicated checkout — just a straightforward conversation with the store.</p>
+        <p style="font-style:italic;color:var(--text);">"We have you covered."</p>
+      </div>
+      <div class="reveal">
+        <div class="feature-grid" style="grid-template-columns:1fr;">
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg>
+            </div>
+            <h3>Product Variety</h3>
+            <p>Smartphones, laptops, tablets, audio, accessories, TVs and more — under one roof.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <h3>Straightforward Ordering</h3>
+            <p>Ask a question or place an order directly on WhatsApp — quick and personal.</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-card__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-11a7 7 0 0114 0c0 6.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+            </div>
+            <h3>Based in Lusaka</h3>
+            <p>Find us at Leeds Complex, Stand 42, Chachacha Road, Lusaka, Zambia.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="container">
+      <div class="wa-band reveal">
+        <div>
+          <h3>Have a question before you order?</h3>
+          <p>Reach out on WhatsApp and we'll help you find the right device.</p>
+        </div>
+        <a class="btn btn--whatsapp" id="aboutWhatsApp" href="#" target="_blank" rel="noopener">Chat on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="site-footer"></div>
+
+<script src="js/products.js"></script>
+<script src="js/site.js"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.getElementById("aboutWhatsApp").href = buildGeneralWhatsAppLink();
+    if (typeof initReveal === "function") initReveal();
+  });
+</script>
+</body>
+</html>
